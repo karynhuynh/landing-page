@@ -23,6 +23,7 @@ h1 {
 }
 
 h2 {
+  font-size: 30px;
   margin: 15px 10px 20px 10px;
 }
 
@@ -35,24 +36,25 @@ h2 {
 }
 
 .box {
-  width: 300px;
-  height: 435px;
+  width: 330px;
+  height: 475px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 15px;
   margin: 20px;
 }
 
 img {
-  width: 257px;
-  border-radius: 15px;
+  width: 280px;
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
 }
 
 .container p {
   line-height: normal;
-  margin: 20px 10px 10px 10px;
+  margin: 25px 10px 10px 10px;
+  font-size: 18px;
 }
 
 a {
@@ -62,14 +64,15 @@ a {
 button {
   font-family: "Italiana", san-serif;
   display: block;
-  margin: 60px auto;
+  margin: 70px auto;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   background: white;
   color: black;
-  padding: 10px 20px;
-  box-shadow: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 30px;
 }
 
 button:hover {
