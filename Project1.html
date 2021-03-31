@@ -52,7 +52,7 @@
           alt="Walking in a field"
         />
         <p>
-          Nowadays, the term, <em><strong>wanderlust</strong></em
+          Nowadays, <em><strong>wanderlust</strong></em
           >, is often associated with one's desire to travel, as well as
           experiencing the unknown, confronting unforseen challenges, and
           exploring different cultural experiences.
@@ -60,30 +60,6 @@
       </div>
     </div>
     <button>Contact Us</button>
+    <script src="src/script.js"></script>
   </body>
-
-  <script>
-    const button = document.querySelector("button");
-
-    function updateHeader(newHeader) {
-      const h1 = document.querySelector("h1");
-      h1.innerHTML = newHeader;
-    }
-
-    function contactUs() {
-      let name = prompt("What is your name?");
-      let age = prompt(`Hello ${name}, how old are you?`);
-
-      if (age <= 16) {
-        alert(
-          "You are currently not of age. Please come back to this page with a parent or guardian."
-        );
-      } else {
-        let email = prompt("What is your email address?");
-        updateHeader(`Thank you ${name}, we'll be in touch!`);
-      }
-    }
-
-    button.addEventListener("click", contactUs);
-  </script>
 </html>
