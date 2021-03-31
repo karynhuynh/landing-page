@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Italiana", san-serif;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      background: linear-gradient(to right, #090a0a, #a4a7a8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+    }
+
+    h1 {
+      margin: 70px 40px 50px 40px;
+      font-size: 70px;
+    }
+
+    h2 {
+      margin: 15px 10px 20px 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+    }
+
+    .box {
+      width: 300px;
+      height: 435px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3),
+        0px 0px 15px rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      padding: 15px;
+      margin: 20px;
+    }
+
+    img {
+      width: 257px;
+      border-radius: 15px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .container p {
+      line-height: normal;
+      margin: 20px 10px 10px 10px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      font-family: "Italiana", san-serif;
+      display: block;
+      margin: 60px auto;
+      cursor: pointer;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      background: white;
+      color: black;
+      padding: 10px 20px;
+      box-shadow: none;
+    }
+
+    button:hover {
+      border: rgba(0, 0, 0, 0.25);
+      background: rgba(0, 0, 0, 0.25);
+      color: white;
+      transition: all 0.25s ease-out;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <h1>Wanderlust</h1>
+    <div class="container">
+      <div class="box">
+        <h2>What is it?</h2>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0271/0287/1612/products/il_fullxfull.736034545_ot5a_1024x1024.jpg?v=1569284169"
+          alt="Daydreaming about amusement parks"
+        />
+        <p>
+          <a href="https://www.merriam-webster.com/dictionary/wanderlust#note-1"
+            >Merriam-Webster</a
+          >
+          defines
+          <em>
+            <strong>wanderlust</strong>
+          </em>
+          as a strong longing for or impulse toward wandering.
+        </p>
+      </div>
+      <div class="box">
+        <h2>History</h2>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0271/0287/1612/products/il_fullxfull.735908764_mmoj_1024x1024.jpg?v=1569284051"
+          alt="Girl staring at a skyline"
+        />
+        <p>
+          The first documented use of the term in English occurred in 1902 and
+          can be traced back to German Romanticism and the German system of
+          apprenticeship. For more information, please visit the
+          <a href="https://en.wikipedia.org/wiki/Wanderlust">Wikipedia</a> page.
+        </p>
+      </div>
+      <div class="box">
+        <h2>Present-day Use</h2>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0271/0287/1612/products/il_fullxfull.1194575535_5z2y_1024x1024.jpg?v=1569284098"
+          alt="Walking in a field"
+        />
+        <p>
+          Nowadays, the term, <em><strong>wanderlust</strong></em
+          >, is often associated with one's desire to travel, as well as
+          experiencing the unknown, confronting unforseen challenges, and
+          exploring different cultural experiences.
+        </p>
+      </div>
+    </div>
+    <button>Contact Us</button>
+  </body>
+
+  <script>
+    const button = document.querySelector("button");
+
+    function updateHeader(newHeader) {
+      const h1 = document.querySelector("h1");
+      h1.innerHTML = newHeader;
+    }
+
+    function contactUs() {
+      let name = prompt("What is your name?");
+      let age = prompt(`Hello ${name}, how old are you?`);
+
+      if (age <= 16) {
+        alert(
+          "You are currently not of age. Please come back to this page with a parent or guardian."
+        );
+      } else {
+        let email = prompt("What is your email address?");
+        updateHeader(`Thank you ${name}, we'll be in touch!`);
+      }
+    }
+
+    button.addEventListener("click", contactUs);
+  </script>
+</html>
