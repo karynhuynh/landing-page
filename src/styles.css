@@ -18,7 +18,7 @@ h2 {
 }
 
 h1 {
-  margin: 70px 40px 50px 40px;
+  margin: 70px 40px;
   font-size: 70px;
 }
 
@@ -36,7 +36,7 @@ h2 {
 
 .box {
   width: 330px;
-  height: 475px;
+  height: 495px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0px 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 15px;
@@ -51,7 +51,7 @@ img {
 }
 
 .container p {
-  line-height: normal;
+  line-height: 1.4;
   margin: 25px 10px 10px 10px;
   font-size: 18px;
 }
@@ -61,7 +61,8 @@ a {
 }
 
 button {
-  font-family: "Italiana", san-serif;
+  font-family: "Lato", san-serif;
+  font-weight: bolder;
   display: block;
   margin: 70px auto;
   cursor: pointer;
