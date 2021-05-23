@@ -8,6 +8,15 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+section {
+  padding: 70px 0;
+  transition: 0.6s ease-in-out;
+}
+
+.dark {
+  background: #24292d;
+}
+
 h1,
 h2 {
   text-align: center;
@@ -15,6 +24,7 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
+  z-index: 100;
 }
 
 h1 {
@@ -27,11 +37,19 @@ h2 {
   margin: 15px 10px 20px 10px;
 }
 
+.dark h2 {
+  color: #fff;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px;
+}
+
+.dark .box {
+  background: #323840;
 }
 
 .box {
@@ -56,6 +74,10 @@ img {
   font-size: 18px;
 }
 
+.dark p {
+  color: #fff;
+}
+
 a {
   text-decoration: none;
 }
@@ -64,7 +86,8 @@ button {
   font-family: "Lato", san-serif;
   font-weight: bolder;
   display: block;
-  margin: 70px auto;
+  margin: 0 auto;
+  margin-top: 70px;
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.25);
@@ -74,11 +97,21 @@ button {
   padding: 20px 30px;
 }
 
+.dark button {
+  background: #323840;
+  color: #fff;
+}
+
 button:hover {
   border: rgba(0, 0, 0, 0.25);
   background: rgba(0, 0, 0, 0.25);
   color: white;
   transition: all 0.25s ease-out;
+}
+
+.dark button:hover {
+  background: #fff;
+  color: #323840;
 }
 
 .toggle {
@@ -98,6 +131,10 @@ button:hover {
 .toggle:before {
   content: "\f186";
   font-family: fontAwesome;
+}
+
+.dark .toggle:before {
+  content: "\f185";
 }
 
 @media (max-width: 600px) {
