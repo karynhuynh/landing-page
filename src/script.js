@@ -1,9 +1,13 @@
+//Button
+
 const button = document.querySelector("button");
 
 function updateHeader(newHeader) {
   const h1 = document.querySelector("h1");
   h1.innerHTML = newHeader;
 }
+
+button.addEventListener("click", contactUs);
 
 function contactUs() {
   let name = prompt("What is your name?");
@@ -19,4 +23,11 @@ function contactUs() {
   }
 }
 
-button.addEventListener("click", contactUs);
+//Activate dark mode
+const section = document.querySelector(".sec");
+const toggle = document.querySelector(".toggle");
+toggle.addEventListener("click", darkMode);
+
+function darkMode() {
+  section.classList.toggle("dark");
+}

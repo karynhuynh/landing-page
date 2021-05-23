@@ -81,6 +81,25 @@ button:hover {
   transition: all 0.25s ease-out;
 }
 
+.toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle:before {
+  content: "\f186";
+  font-family: fontAwesome;
+}
+
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
