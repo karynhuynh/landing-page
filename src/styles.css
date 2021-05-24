@@ -9,7 +9,7 @@ body {
 }
 
 section {
-  padding: 70px 0;
+  padding: 70px 0 100px 0;
   transition: 0.6s ease-in-out;
 }
 
@@ -20,15 +20,15 @@ section {
 h1,
 h2 {
   text-align: center;
-  background: linear-gradient(to right, #090a0a, #a4a7a8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(to right, #090a0a, #c8cece); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
   font-weight: 900;
   z-index: 100;
 }
 
 h1 {
-  margin: 70px 40px;
+  margin: 70px 0;
   font-size: 70px;
 }
 
@@ -37,15 +37,15 @@ h2 {
   margin: 15px 10px 20px 10px;
 }
 
+.dark h1,
 .dark h2 {
-  color: #fff;
+  color: #c8cece;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px;
 }
 
 .dark .box {
@@ -54,11 +54,12 @@ h2 {
 
 .box {
   width: 330px;
-  height: 495px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   padding: 15px;
   margin: 20px;
+  transition: 0.6s ease-in-out;
 }
 
 img {
@@ -75,7 +76,7 @@ img {
 }
 
 .dark p {
-  color: #fff;
+  color: #c8cece;
 }
 
 a {
@@ -90,33 +91,40 @@ button {
   margin-top: 70px;
   cursor: pointer;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  /* border: 1px solid rgba(0, 0, 0, 0.25); */
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   background: white;
   color: black;
   font-size: 18px;
   padding: 20px 30px;
+  transition: 0.6s ease-in-out;
 }
 
 .dark button {
   background: #323840;
-  color: #fff;
+  color: #c8cece;
+  transition: 0.6s ease-in-out;
 }
 
 button:hover {
-  border: rgba(0, 0, 0, 0.25);
-  background: rgba(0, 0, 0, 0.25);
-  color: white;
-  transition: all 0.25s ease-out;
+  background: #000;
+  color: #fff;
 }
 
 .dark button:hover {
-  background: #fff;
+  background: #c8cece;
   color: #323840;
+}
+
+.dark .toggle {
+  background: #323840;
+  color: #c8cece;
 }
 
 .toggle {
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 30px;
   width: 30px;
   height: 30px;
