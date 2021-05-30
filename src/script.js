@@ -11,15 +11,19 @@ button.addEventListener("click", contactUs);
 
 function contactUs() {
   let name = prompt("What is your name?");
-  let age = prompt(`Hello ${name}, how old are you?`);
-
-  if (age <= 16) {
-    alert(
-      "You are currently not of age. Please come back to this page with a parent or guardian."
-    );
+  
+  if (name.length > 0) {
+    let age = prompt(`Hello ${name}, how old are you?`);
+    if (age <= 16) {
+      alert(
+        "You are currently not of age. Please come back to this page with a parent or guardian."
+      );
+    } else {
+      let email = prompt("What is your email address?");
+      updateHeader(`Thank you ${name}, we'll be in touch!`);
+    }
   } else {
-    let email = prompt("What is your email address?");
-    updateHeader(`Thank you ${name}, we'll be in touch!`);
+    alert("Please enter a name.");
   }
 }
 
