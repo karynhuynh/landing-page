@@ -1,12 +1,6 @@
 //Button
 
 const button = document.querySelector("button");
-
-function updateHeader(newHeader) {
-  const h1 = document.querySelector("h1");
-  h1.innerHTML = newHeader;
-}
-
 button.addEventListener("click", contactUs);
 
 function contactUs() {
@@ -25,6 +19,11 @@ function contactUs() {
   } else {
     alert("Please enter a name.");
   }
+}
+
+function updateHeader(newHeader) {
+  const h1 = document.querySelector("h1");
+  h1.innerHTML = newHeader;
 }
 
 //Activate dark mode
