@@ -27,6 +27,7 @@ function updateHeader(newHeader) {
 }
 
 //Activate dark mode
+
 const section = document.querySelector(".sec");
 const toggle = document.querySelector(".toggle");
 toggle.addEventListener("click", darkMode);

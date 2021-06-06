@@ -55,7 +55,7 @@ h2 {
 .box {
   width: 350px;
   height: 530px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 25px;
   margin: 25px;
@@ -84,11 +84,12 @@ img {
 
 a {
   text-decoration: none;
+  font-weight: bolder;
 }
-/* 
+
 .dark a {
   color: #fff;
-} */
+}
 
 button {
   font-family: "Lato", san-serif;
@@ -157,4 +158,26 @@ button:hover {
   .container {
     flex-direction: column;
   }
+
+  .container p, button {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 55px;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  img {
+    width: 260px;
+  }
+
+  .box {
+  width: 290px;
+  height: 480px;
+  padding: 20px;
 }
